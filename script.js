@@ -5,7 +5,7 @@ $(window).load(function(){
 
 
 	// Testing wether the current browser supports the canvas element:
-	var supportCanvas = 'getContext' in document.createElement('canvas');
+//	var supportCanvas = 'getContext' in document.createElement('canvas');
 
 	// The canvas manipulations of the images are CPU intensive,
 	// this is why we are using setTimeout to make them asynchronous
@@ -19,19 +19,19 @@ $(window).load(function(){
 		
 		window.console && window.console.time && console.time('Generated In');
 		
-		if(supportCanvas){
-			$('#slideshow img').each(function(){
+//		if(supportCanvas){
+//			$('#slideshow img').each(function(){
 
-				if(!slideshow.width){
+//				if(!slideshow.width){
 					// Taking the dimensions of the first image:
-					slideshow.width = this.width;
-					slideshow.height = this.height;
-				}
+//					slideshow.width = this.width;
+//					slideshow.height = this.height;
+//				}
 				
 				// Rendering the modified versions of the images:
-				createCanvasOverlay(this);
-			});
-		}
+//				createCanvasOverlay(this);
+//			});
+//		}
 		
 		window.console && window.console.timeEnd && console.timeEnd('Generated In');
 		
@@ -52,19 +52,19 @@ $(window).load(function(){
 
 			var next = slides.eq(nextIndex);
 			
-			if(supportCanvas){
-				canvas.fadeIn(750, function(){
-					next.addClass('slideActive').fadeOut(0).fadeIn(750);
-					li.fadeOut(750, function(){
-						li.removeClass('slideActive');
-						canvas.hide();
-					});
-				});
-			}
-			else {
+//			if(supportCanvas){
+//				canvas.fadeIn(750, function(){
+//					next.addClass('slideActive').fadeOut(0).fadeIn(750);
+//					li.fadeOut(750, function(){
+//						li.removeClass('slideActive');
+//						canvas.hide();
+//					});
+//				});
+//			}
+//			else {
 				next.addClass('slideActive').fadeOut(0).fadeIn(750);
 				li.removeClass('slideActive').fadeIn(0).fadeOut(750);
-			}
+//			}
 
 			current = nextIndex;
 		});
