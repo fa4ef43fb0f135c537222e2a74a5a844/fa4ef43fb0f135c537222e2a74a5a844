@@ -16,20 +16,26 @@ $(window).load(function(){
 		slideshow = {width:0,height:0};
 
 	setTimeout(function(){
-
+		
 		window.console && window.console.time && console.time('Generated In');
 		
 		if(supportCanvas){
 			$('#slideshow img').each(function(){
-				slideshow.width = this.width;
-				slideshow.height = this.height;
+
+				if(!slideshow.width){
+					// Taking the dimensions of the first image:
+					slideshow.width = this.width;
+					slideshow.height = this.height;
+				}
+				
+				// Rendering the modified versions of the images:
 				createCanvasOverlay(this);
 			});
 		}
 		
 		window.console && window.console.timeEnd && console.timeEnd('Generated In');
-
-		$('.arrow').click(function(){
+		
+		$('#slideshow .arrow').click(function(){
 			var li			= slides.eq(current),
 				canvas		= li.find('canvas'),
 				nextIndex	= 0;
@@ -45,25 +51,35 @@ $(window).load(function(){
 			}
 
 			var next = slides.eq(nextIndex);
-
+			
 			if(supportCanvas){
-				canvas.fadeIn(750, function(){
-					next.addClass('slideActive').fadeOut(0).fadeIn(750);
-					li.fadeOut(750, function(){
+
+				// This browser supports canvas, fade it into view:
+
+				canvas.fadeIn(function(){
+					
+					// Show the next slide below the current one:
+					next.show();
+					current = nextIndex;
+					
+					// Fade the current slide out of view:
+					li.fadeOut(function(){
 						li.removeClass('slideActive');
 						canvas.hide();
+						next.addClass('slideActive');
 					});
 				});
 			}
 			else {
-				next.addClass('slideActive').fadeOut(0).fadeIn(750);
-				li.removeClass('slideActive').fadeIn(0).fadeOut(750);
+				
+				// This browser does not support canvas.
+				// Use the plain version of the slideshow.
+				
+				current=nextIndex;
+				next.addClass('slideActive').show();
+				li.removeClass('slideActive').hide();
 			}
-
-			current = nextIndex;
 		});
-
-		$(document.body).fadeIn(2000);
 		
 	},100);
 
@@ -81,7 +97,7 @@ $(window).load(function(){
 		canvas.height = slideshow.height;
 		
 		// Drawing the default version of the image on the canvas:
-		canvasContext.drawImage(image,0,0,image.width,image.height);
+		canvasContext.drawImage(image,0,0);
 		
 
 		// Taking the image data and storing it in the imageData array:
