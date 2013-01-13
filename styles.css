@@ -18,7 +18,7 @@ html, body{
 
 #slideshow{
 	height: 90%;
-    margin: 10% auto 0;
+    margin: 3% auto 0;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -78,7 +78,7 @@ html, body{
     height: auto !important;
 }
 
-.arrow{
+#slideshow .arrow{
 	height:86px;
 	width:60px;
 	position:absolute;
@@ -88,8 +88,8 @@ html, body{
 	z-index:5000;
 }
 
-.previous{ background-position:left top;left:0;}
-.previous:hover{ background-position:left bottom;}
+#slideshow .previous{ background-position:left top;left:0;}
+#slideshow .previous:hover{ background-position:left bottom;}
 
-.next{ background-position:right top;right:0;}
-.next:hover{ background-position:right bottom;}
+#slideshow .next{ background-position:right top;right:0;}
+#slideshow .next:hover{ background-position:right bottom;}
