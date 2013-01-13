@@ -2,12 +2,13 @@
 	margin:0;
 	padding:0;
 }
-html, body {
-    color:#eee;
+
+html, body{
+	color:#eee;
     background-attachment: fixed;
     background-color: rgb(200,200,200);
-    background-image: url("bgfull.jpg");
-    background-position: center center;
+	background:url('img/bg.jpg') repeat-x #0c0d10;
+	background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     font:13px "Lucida Sans Unicode",Arial,Helvetica,sans-serif;
@@ -22,7 +23,7 @@ html, body {
 }
 
 #slideshow{
-    height: 90%;
+	height: 90%;
     margin: 3% auto 0;
     overflow: hidden;
     position: relative;
@@ -48,6 +49,7 @@ html, body {
 	z-index:10;
 	width: 100%;
 }
+
 #slideshow li div {
     position:absolute;
     top: -30px;
@@ -66,6 +68,7 @@ html, body {
 	position:absolute;
 	z-index:100;
 }
+
 #slideshow canvas,
 #slideshow img {
     -o-box-shadow:0 0 10px #777;
@@ -81,18 +84,18 @@ html, body {
     height: auto !important;
 }
 
-.arrow{
+#slideshow .arrow{
 	height:86px;
 	width:60px;
 	position:absolute;
-    top: 43%;
-	background:url('arrows.png') no-repeat;
+	background:url('img/arrows.png') no-repeat;
+	top: 43%;
 	cursor:pointer;
 	z-index:5000;
 }
 
-.previous{ background-position:left top;left:0;}
-.previous:hover{ background-position:left bottom;}
+#slideshow .previous{ background-position:left top;left:0;}
+#slideshow .previous:hover{ background-position:left bottom;}
 
-.next{ background-position:right top;right:0;}
-.next:hover{ background-position:right bottom;}
+#slideshow .next{ background-position:right top;right:0;}
+#slideshow .next:hover{ background-position:right bottom;}
