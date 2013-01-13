@@ -24,8 +24,8 @@ $(window).load(function(){
 
 				if(!slideshow.width){
 					// Taking the dimensions of the first image:
-					slideshow.width = this.width;
-					slideshow.height = this.height;
+					slideshow.width = window.width;
+					slideshow.height = window.height;
 				}
 				
 				// Rendering the modified versions of the images:
