@@ -22,9 +22,11 @@ $(window).load(function(){
 		if(supportCanvas){
 			$('#slideshow img').each(function(){
 
+				if(!slideshow.width){
 					// Taking the dimensions of the first image:
-				slideshow.width = this.width;
-				slideshow.height = this.height;
+					slideshow.width = this.width;
+					slideshow.height = this.height;
+				}
 				
 				// Rendering the modified versions of the images:
 				createCanvasOverlay(this);
