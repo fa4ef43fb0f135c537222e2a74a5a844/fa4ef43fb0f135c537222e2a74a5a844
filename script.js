@@ -83,8 +83,8 @@ $(window).load(function(){
 			canvasContext	= canvas.getContext("2d");
 		
 		// Make it the same size as the image
-		canvas.width = image.width;
-		canvas.height = image.height;
+		canvas.width = slideshow.width;
+		canvas.height = slideshow.height;
 		
 		// Drawing the default version of the image on the canvas:
 		canvasContext.drawImage(image,0,0, image.width, image.height);
