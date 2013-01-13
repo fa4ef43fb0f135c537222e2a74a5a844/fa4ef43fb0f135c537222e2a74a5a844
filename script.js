@@ -29,7 +29,7 @@ $(window).load(function(){
 				}
 				
 				// Rendering the modified versions of the images:
-				//createCanvasOverlay(this);
+				createCanvasOverlay(this);
 			});
 		}
 		
