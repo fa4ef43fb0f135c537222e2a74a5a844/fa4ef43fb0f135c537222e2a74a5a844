@@ -26,10 +26,11 @@ $(window).load(function(){
 					// Taking the dimensions of the first image:
 					slideshow.width = this.width;
 					slideshow.height = this.height;
+					createCanvasOverlay(this);
 				}
 				
 				// Rendering the modified versions of the images:
-				createCanvasOverlay(this);
+				
 			});
 		}
 		
