@@ -87,7 +87,7 @@ $(window).load(function(){
 		canvas.height = this.height;
 		
 		// Drawing the default version of the image on the canvas:
-		canvasContext.drawImage(image,0,0, this.width, this.height);
+		canvasContext.drawImage(image,0,0, image.width, image.height);
 		
 
 		// Taking the image data and storing it in the imageData array:
