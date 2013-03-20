@@ -1,158 +1,221 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>PhotoSwipe</title>
-	<meta name="author" content="Ste Brennan - Code Computerlove - http://www.codecomputerlove.com/" />
+	<title>YOU HAD ONE JOB!</title>
+	<meta name="author" content="You Had One Job.. - http://hadonejob.com/" />
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	
-	<link href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css" rel="stylesheet" />
-	<link href="stylesheets/jquery-mobile.css" type="text/css" rel="stylesheet" />
+	<link href="stylesheets/styles.css" type="text/css" rel="stylesheet" />
+	
 	<link href="stylesheets/photoswipe.css" type="text/css" rel="stylesheet" />
 	
 	<script type="text/javascript" src="lib/klass.min.js"></script>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js"></script>
-	<script type="text/javascript" src="javascripts/code.photoswipe.jquery-3.0.5.min.js"></script>
+	<script type="text/javascript" src="javascripts/code.photoswipe-3.0.5.min.js"></script>
 	
 	
 	<script type="text/javascript">
-		
-		/*
-		 * IMPORTANT!!!
-		 * REMEMBER TO ADD  rel="external"  to your anchor tags. 
-		 * If you don't this will mess with how jQuery Mobile works
-		 */
-		
-		(function(window, $, PhotoSwipe){
-			
-			$(document).ready(function(){
-				
-				$('div.gallery-page')
-					.live('pageshow', function(e){
-						
-						var 
-							currentPage = $(e.target),
-							options = {},
-							photoSwipeInstance = $("ul.gallery a", e.target).photoSwipe(options,  currentPage.attr('id'));
-							
-						return true;
-						
-					})
-					
-					.live('pagehide', function(e){
-						
-						var 
-							currentPage = $(e.target),
-							photoSwipeInstance = PhotoSwipe.getInstance(currentPage.attr('id'));
 
-						if (typeof photoSwipeInstance != "undefined" && photoSwipeInstance != null) {
-							PhotoSwipe.detatch(photoSwipeInstance);
-						}
-						
-						return true;
-						
-					});
-				
-			});
+		(function(window, PhotoSwipe){
 		
-		}(window, window.jQuery, window.Code.PhotoSwipe));
+			document.addEventListener('DOMContentLoaded', function(){
+			
+				var
+					options = {},
+					instance = PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), options );
+			
+			}, false);
+			
+			
+		}(window, window.Code.PhotoSwipe));
 		
 	</script>
 	
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37640551-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
 </head>
 <body>
 
-<div data-role="page" id="Home">
+<div id="MainContent">
 
-	<div data-role="header">
-		<h1>PhotoSwipe</h1>
-	</div>
 	
+	<ul id="Gallery" class="gallery">
+		
+		<li><a href="images/full/63814032.jpg"><img src="images/thumb/63814032.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/34714861.jpg"><img src="images/thumb/34714861.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/98245494.jpg"><img src="images/thumb/98245494.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/09223955.jpg"><img src="images/thumb/09223955.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/86399470.jpg"><img src="images/thumb/86399470.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/18400305.jpg"><img src="images/thumb/18400305.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/06379678.jpg"><img src="images/thumb/06379678.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/90352766.jpg"><img src="images/thumb/90352766.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/91366132.jpg"><img src="images/thumb/91366132.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/10833540.jpg"><img src="images/thumb/10833540.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/21499383.jpg"><img src="images/thumb/21499383.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/28309858.jpg"><img src="images/thumb/28309858.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/40138468.jpg"><img src="images/thumb/40138468.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/21361937.jpg"><img src="images/thumb/21361937.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/76030641.jpg"><img src="images/thumb/76030641.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/79151773.jpg"><img src="images/thumb/79151773.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/74857274.jpg"><img src="images/thumb/74857274.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/29091421.jpg"><img src="images/thumb/29091421.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/94321370.jpg"><img src="images/thumb/94321370.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/45408098.jpg"><img src="images/thumb/45408098.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/14271425.jpg"><img src="images/thumb/14271425.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/06368128.jpg"><img src="images/thumb/06368128.jpg" alt="...You Had One Job..." /></a></li>
+
+		<li><a href="images/full/15665517.jpg"><img src="images/thumb/15665517.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/86551919.jpg"><img src="images/thumb/86551919.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/59636376.jpg"><img src="images/thumb/59636376.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/93774344.jpg"><img src="images/thumb/93774344.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/08960198.jpg"><img src="images/thumb/08960198.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/89074296.jpg"><img src="images/thumb/89074296.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/76791020.jpg"><img src="images/thumb/76791020.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/34773069.jpg"><img src="images/thumb/34773069.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/38985093.jpg"><img src="images/thumb/38985093.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/15465394.jpg"><img src="images/thumb/15465394.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/66671569.jpg"><img src="images/thumb/66671569.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/14134988.jpg"><img src="images/thumb/14134988.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/83623976.jpg"><img src="images/thumb/83623976.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/24337352.jpg"><img src="images/thumb/24337352.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/99458718.jpg"><img src="images/thumb/99458718.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/46949596.jpg"><img src="images/thumb/46949596.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/63389760.jpg"><img src="images/thumb/63389760.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/23416459.jpg"><img src="images/thumb/23416459.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/89414737.jpg"><img src="images/thumb/89414737.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/49150816.jpg"><img src="images/thumb/49150816.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/14022233.jpg"><img src="images/thumb/14022233.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/41180887.jpg"><img src="images/thumb/41180887.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/65031010.jpg"><img src="images/thumb/65031010.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/79387333.jpg"><img src="images/thumb/79387333.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/88861344.jpg"><img src="images/thumb/88861344.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/73980564.jpg"><img src="images/thumb/73980564.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/18573724.jpg"><img src="images/thumb/18573724.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/70907344.jpg"><img src="images/thumb/70907344.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/41984021.jpg"><img src="images/thumb/41984021.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/68068654.jpg"><img src="images/thumb/68068654.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/63256961.jpg"><img src="images/thumb/63256961.jpg" alt="...You Had One Job..." /></a></li>
+
+		<li><a href="images/full/89961461.jpg"><img src="images/thumb/89961461.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/45173317.jpg"><img src="images/thumb/45173317.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/77777577.jpg"><img src="images/thumb/77777577.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/67240181.jpg"><img src="images/thumb/67240181.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/59473738.jpg"><img src="images/thumb/59473738.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/51856887.jpg"><img src="images/thumb/51856887.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/90512419.jpg"><img src="images/thumb/90512419.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/84023636.jpg"><img src="images/thumb/84023636.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/47575577.jpg"><img src="images/thumb/47575577.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/34101902.jpg"><img src="images/thumb/34101902.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/77662556.jpg"><img src="images/thumb/77662556.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/89558958.jpg"><img src="images/thumb/89558958.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/06787198.jpg"><img src="images/thumb/06787198.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/88969973.jpg"><img src="images/thumb/88969973.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/77985352.jpg"><img src="images/thumb/77985352.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/05504907.jpg"><img src="images/thumb/05504907.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/91270634.jpg"><img src="images/thumb/91270634.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/69877960.jpg"><img src="images/thumb/69877960.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/34960219.jpg"><img src="images/thumb/34960219.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/22249369.jpg"><img src="images/thumb/22249369.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/25733017.jpg"><img src="images/thumb/25733017.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/31637764.jpg"><img src="images/thumb/31637764.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/37703232.jpg"><img src="images/thumb/37703232.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/84355367.jpg"><img src="images/thumb/84355367.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/03815568.jpg"><img src="images/thumb/03815568.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/11071180.jpg"><img src="images/thumb/11071180.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/09070531.jpg"><img src="images/thumb/09070531.jpg" alt="...You Had One Job..." /></a></li>
+		
+		<li><a href="images/full/25922688.jpg"><img src="images/thumb/25922688.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/19813794.jpg"><img src="images/thumb/19813794.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/28429648.jpg"><img src="images/thumb/28429648.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/52410279.jpg"><img src="images/thumb/52410279.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/86961386.jpg"><img src="images/thumb/86961386.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/53567041.jpg"><img src="images/thumb/53567041.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/12068176.jpg"><img src="images/thumb/12068176.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/94753636.jpg"><img src="images/thumb/94753636.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/50584814.jpg"><img src="images/thumb/50584814.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/39293489.jpg"><img src="images/thumb/39293489.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/58061563.jpg"><img src="images/thumb/58061563.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/93757689.jpg"><img src="images/thumb/93757689.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/75809430.jpg"><img src="images/thumb/75809430.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/94789812.jpg"><img src="images/thumb/94789812.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/58108834.jpg"><img src="images/thumb/58108834.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/22354121.jpg"><img src="images/thumb/22354121.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/49037731.jpg"><img src="images/thumb/49037731.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/41827212.jpg"><img src="images/thumb/41827212.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/92189118.jpg"><img src="images/thumb/92189118.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/69717658.jpg"><img src="images/thumb/69717658.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/60097359.jpg"><img src="images/thumb/60097359.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/65791875.jpg"><img src="images/thumb/65791875.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/16403363.jpg"><img src="images/thumb/16403363.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/54470245.jpg"><img src="images/thumb/54470245.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/95784638.jpg"><img src="images/thumb/95784638.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/00313494.jpg"><img src="images/thumb/00313494.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/44646956.jpg"><img src="images/thumb/44646956.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/68255726.jpg"><img src="images/thumb/68255726.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/47791262.jpg"><img src="images/thumb/47791262.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/90136241.jpg"><img src="images/thumb/90136241.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/37026733.jpg"><img src="images/thumb/37026733.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/95626182.jpg"><img src="images/thumb/95626182.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/87569117.jpg"><img src="images/thumb/87569117.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/16220485.jpg"><img src="images/thumb/16220485.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/15864286.jpg"><img src="images/thumb/15864286.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/98419185.jpg"><img src="images/thumb/98419185.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/06003366.jpg"><img src="images/thumb/06003366.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/06143455.jpg"><img src="images/thumb/06143455.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/61487573.jpg"><img src="images/thumb/61487573.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/90759782.jpg"><img src="images/thumb/90759782.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/37233437.jpg"><img src="images/thumb/37233437.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/37567013.jpg"><img src="images/thumb/37567013.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/79150557.jpg"><img src="images/thumb/79150557.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/91366991.jpg"><img src="images/thumb/91366991.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/51880608.jpg"><img src="images/thumb/51880608.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/27592143.jpg"><img src="images/thumb/27592143.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/34460638.jpg"><img src="images/thumb/34460638.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/87408451.jpg"><img src="images/thumb/87408451.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/18540274.jpg"><img src="images/thumb/18540274.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/34224719.jpg"><img src="images/thumb/34224719.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/52616075.jpg"><img src="images/thumb/52616075.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/06018411.jpg"><img src="images/thumb/06018411.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/34530007.jpg"><img src="images/thumb/34530007.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/82774780.jpg"><img src="images/thumb/82774780.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/05810439.jpg"><img src="images/thumb/05810439.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/75518990.jpg"><img src="images/thumb/75518990.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/83113997.jpg"><img src="images/thumb/83113997.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/46616944.jpg"><img src="images/thumb/46616944.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/28680659.jpg"><img src="images/thumb/28680659.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/76238510.jpg"><img src="images/thumb/76238510.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/78646088.jpg"><img src="images/thumb/78646088.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/50528277.jpg"><img src="images/thumb/50528277.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/01248121.jpg"><img src="images/thumb/01248121.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/91213166.jpg"><img src="images/thumb/91213166.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/22740691.jpg"><img src="images/thumb/22740691.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/81367200.jpg"><img src="images/thumb/81367200.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/72727637.jpg"><img src="images/thumb/72727637.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/82684895.jpg"><img src="images/thumb/82684895.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/36959438.jpg"><img src="images/thumb/36959438.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/61119407.jpg"><img src="images/thumb/61119407.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/13376370.jpg"><img src="images/thumb/13376370.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/31730901.jpg"><img src="images/thumb/31730901.jpg" alt="...You Had One Job..." /></a></li>
+		<li><a href="images/full/38170818.jpg"><img src="images/thumb/38170818.jpg" alt="...You Had One Job..." /></a></li>
+		
+	</ul>
 	
-	<div data-role="content" >	
-		
-		<p>These examples show PhotoSwipe integrated with jQuery Mobile:</p>		
-		
-		<ul data-role="listview" data-inset="true">
-			<li><a href="#Gallery1">First Gallery</a></li> 
-			<li><a href="#Gallery2">Second Gallery</a></li> 
-		</ul> 
-		
-		<p>PhotoSwipe has also been designed to run stand-alone and can be easily integrated into your non jQuery / jQuery mobile websites:</p>
-		
-		<ul data-role="listview" data-inset="true">
-			<li><a href="01-default.html" target="_blank">Code Computerlove</a></li> 
-		</ul> 
-		
-	</div>
-
-	<div data-role="footer">
-		<h4>&copy; 2012 Code Computerlove</h4>
-	</div>
-
+</div>	
+<div id="Footer">
+	<p align="right"><small>you have one job, send your hilarious pictures to <b><a href="http://hadonejob.com/faq" title="">submit@hadonejob.com [?]</a></b></small></p>
 </div>
-
-
-<div data-role="page" data-add-back-btn="true" id="Gallery1" class="gallery-page">
-
-	<div data-role="header">
-		<h1>First Gallery</h1>
-	</div>
-
-	<div data-role="content">	
-		
-		<ul class="gallery">
-		
-			<li><a href="images/full/001.jpg" rel="external"><img src="images/thumb/001.jpg" alt="Image 001" /></a></li>
-			<li><a href="images/full/002.jpg" rel="external"><img src="images/thumb/002.jpg" alt="Image 002" /></a></li>
-			<li><a href="images/full/003.jpg" rel="external"><img src="images/thumb/003.jpg" alt="Image 003" /></a></li>
-			<li><a href="images/full/004.jpg" rel="external"><img src="images/thumb/004.jpg" alt="Image 004" /></a></li>
-			<li><a href="images/full/005.jpg" rel="external"><img src="images/thumb/005.jpg" alt="Image 005" /></a></li>
-			<li><a href="images/full/006.jpg" rel="external"><img src="images/thumb/006.jpg" alt="Image 006" /></a></li>
-			<li><a href="images/full/007.jpg" rel="external"><img src="images/thumb/007.jpg" alt="Image 007" /></a></li>
-			<li><a href="images/full/008.jpg" rel="external"><img src="images/thumb/008.jpg" alt="Image 008" /></a></li>
-			<li><a href="images/full/009.jpg" rel="external"><img src="images/thumb/009.jpg" alt="Image 009" /></a></li>
-			
-		</ul>
-		
-	</div>
-	
-	<div data-role="footer">
-		<h4>&copy; 2012 Code Computerlove</h4>
-	</div>
-	
-</div>
-
-<div data-role="page" data-add-back-btn="true" id="Gallery2" class="gallery-page">
-
-	<div data-role="header">
-		<h1>Second Gallery</h1>
-	</div>
-
-	<div data-role="content">	
-		
-		<ul class="gallery">
-		
-			<li><a href="images/full/010.jpg" rel="external"><img src="images/thumb/010.jpg" alt="Image 010" /></a></li>
-			<li><a href="images/full/011.jpg" rel="external"><img src="images/thumb/011.jpg" alt="Image 011" /></a></li>
-			<li><a href="images/full/012.jpg" rel="external"><img src="images/thumb/012.jpg" alt="Image 012" /></a></li>
-			<li><a href="images/full/013.jpg" rel="external"><img src="images/thumb/013.jpg" alt="Image 013" /></a></li>
-			<li><a href="images/full/014.jpg" rel="external"><img src="images/thumb/014.jpg" alt="Image 014" /></a></li>
-			<li><a href="images/full/015.jpg" rel="external"><img src="images/thumb/015.jpg" alt="Image 015" /></a></li>
-			<li><a href="images/full/016.jpg" rel="external"><img src="images/thumb/016.jpg" alt="Image 016" /></a></li>
-			<li><a href="images/full/017.jpg" rel="external"><img src="images/thumb/017.jpg" alt="Image 017" /></a></li>
-			<li><a href="images/full/018.jpg" rel="external"><img src="images/thumb/018.jpg" alt="Image 018" /></a></li>
-		
-		</ul>
-		
-	</div>
-
-	<div data-role="footer">
-		<h4>&copy; 2012 Code Computerlove</h4>
-	</div>
-
-</div>
-
 </body>
 </html>
