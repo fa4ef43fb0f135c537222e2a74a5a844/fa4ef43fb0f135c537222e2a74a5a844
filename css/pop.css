@@ -1,0 +1,38 @@
+#popOverlay {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:9999;
+    background-color:black;
+    opacity:0.85;
+}
+
+#popBox {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    text-align: center;
+    line-height: 0;
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-weight: normal;
+}
+
+.shareButtons {
+    display: inline;
+}
+
+.popBottom {
+    content: "";
+    width: 500px;
+    height: 30px;
+    margin-left: 30%;
+    display: table;
+    clear: both;
+}
+
+.popBottomImg {
+    width: 30px;
+    float: right;
+    cursor: pointer;
+}
