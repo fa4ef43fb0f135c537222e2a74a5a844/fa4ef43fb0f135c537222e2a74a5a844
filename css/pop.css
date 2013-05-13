@@ -77,21 +77,21 @@
 
 .fb_button {
     position: absolute;
-    bottom: 5px;
-    height: 45px;
+    bottom: 1%;
+    height: 5%;
     left: 45%;
 }
 
 .tw_button {
     position: absolute;
-    bottom: 5px;
-    height: 45px;
+    bottom: 1%;
+    height: 5%;
     left: 50%;
 }
 
 .plus_button {
     position: absolute;
-    bottom: 5px;
-    height: 45px;
+    bottom: 1%;
+    height: 5%;
     left: 55%;
 }
