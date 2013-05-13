@@ -5,6 +5,7 @@ var plus = encodeURIComponent('https://plusone.google.com/_/+1/confirm?hl=en&url
 function unpopup() {
     $("#popOverlay").css('display', 'none');
     $("#popBox").css('display', 'none');
+    $('#popImageId').attr('src', 'img/loading.gif');    
 }
 
 function share(url) {
