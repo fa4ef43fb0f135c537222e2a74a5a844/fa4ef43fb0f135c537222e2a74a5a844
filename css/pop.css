@@ -29,14 +29,14 @@
     width: 208px;
     height: 30px;
     padding: 0px;
-    background-color: white;
+    background-color: transparent;
     opacity: 1;
     display: none;
 }
 
 .fb-button {
     position: absolute;
-    width: 25px;
+    width: 33.3%;
     top: 0px;
     padding: 2px;
     left: 2px;
@@ -44,18 +44,18 @@
 
 .tw-button {
     position: absolute;
-    width: 25px;
+    width: 33.3%;
     top: 0px;
     padding: 2px;
-    left: 30px;
+    left: 67px;
 }
 
 .plus-button {
     position: absolute;
-    width: 25px;
+    width: 33.3%;
     top: 0px;
     padding: 2px;
-    left: 60px;
+    left: 132px;
 }
 
 .popBottom {
