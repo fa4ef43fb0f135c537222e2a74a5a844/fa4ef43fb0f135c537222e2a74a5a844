@@ -69,7 +69,7 @@ function popup(el, img_path) {
     pop_html += ('<div id="popBox" style="display: block; top:'+ image_top +'px; left: 0px; height:' + $(window).height() + 'px;>');
 
     pop_html += ('<div id="popImage">');
-    pop_html += ('<img id="popImageId" src="'+img_path+'" onclick="unpopup()" style="height:' + image_height + 'px; max-width:inherit;>');
+    pop_html += ('<img id="popImageId" src="'+img_path+'" onclick="unpopup()" style="height:' + image_height + 'px; max-width:100%;>');
     pop_html += ('</div>'); // popup image
 
     // popup bottom - sharring buttons and close icon
