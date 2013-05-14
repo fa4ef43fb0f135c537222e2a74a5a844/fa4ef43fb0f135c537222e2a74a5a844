@@ -27,14 +27,9 @@
     top: 0px;
     left: 0px;
     width: 208px;
-    height: 30px;
     padding: 0px;
-    background-color: transparent;
+    background-color: white;
     opacity: 1;
-    display: none;
-}
-
-.share-block {
     display: none;
 }
 
