@@ -34,6 +34,10 @@
     display: none;
 }
 
+.share-block {
+    display: none;
+}
+
 .fb-button {
     position: absolute;
     width: 33.3%;

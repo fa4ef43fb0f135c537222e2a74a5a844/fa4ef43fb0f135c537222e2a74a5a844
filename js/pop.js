@@ -31,13 +31,19 @@ function shareImgPLUS(elem) {
 }
 
 function showSharing(elem) {
-    var sb = elem.getElementsByClassName('share-buttons')[0];
+    /*
+    var sb = elem.getElementsByTagName('div')[0];
+    //alert(sb.innerHTML);
     sb.style.display = 'block';
+    */
 }
 
 function hideSharing(elem) {
-    var sb = elem.getElementsByClassName('share-buttons')[0];
+    /*
+    var sb = elem.getElementsByTagName('div')[0];
+    //alert(sb.innerHTML);
     sb.style.display = 'none';
+    */
 }
 
 function popup(el, img_path) {
