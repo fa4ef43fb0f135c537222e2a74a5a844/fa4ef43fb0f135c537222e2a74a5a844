@@ -27,7 +27,7 @@ html[xmlns] .clear { display: block;}
 #demoBar .leftAlig, #demoBar .rightAlig {border: 0px!important; text-align: left;}
 #demoBar p a {color: #fff!important; text-decoration: none; padding: 10px 15px; display: block; font-size: 20px; background: #444444; font-family: Georgia, Times New Roman, serif; font-style: italic;}
 #demoBar p a:hover {background: #000; color: #fff!important;}
-#demoBar p {font-size: 11px; margin: 0px; line-height: 24px;}
+#demoBar p {font-size: 20px; margin: 0px; line-height: 24px;}
 
 #demoBar .rightAlig {position: relative;}
 #demoBar .leftAlig {padding-right: 0px!important;}
